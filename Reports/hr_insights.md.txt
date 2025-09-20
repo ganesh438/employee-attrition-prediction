@@ -1,0 +1,48 @@
+# 📊 HR Insights Report – Employee Attrition Analysis
+
+## 🎯 Project Goal
+Predict employee attrition and uncover key factors driving voluntary exits so HR can improve retention strategies.
+
+---
+
+## 🧠 Key Drivers of Attrition (via SHAP)
+
+| Feature               | Insight |
+|------------------------|---------|
+| **OverTime**           | Employees working overtime are more likely to leave. |
+| **MonthlyIncome**      | Lower income is associated with higher attrition. |
+| **StockOptionLevel**   | Lack of stock options increases the risk of leaving. |
+| **DistanceFromHome**   | Longer commutes correlate with higher attrition. |
+| **NumCompaniesWorked** | Employees with many past jobs tend to leave again. |
+| **JobSatisfaction**    | Lower job satisfaction = higher attrition. |
+| **EnvironmentSatisfaction** | Dissatisfaction with the work environment contributes to exits. |
+| **Age**                | Younger employees show a higher tendency to leave. |
+
+---
+
+## 📈 Model Performance (XGBoost)
+- **Accuracy**: 87%
+- **ROC-AUC**: 0.77
+- **F1 (Attrition Class)**: 0.40
+> Strong model performance for identifying potential leavers.
+
+---
+
+## ✅ Recommendations for HR:
+1. **Monitor Overtime**: Flag departments with high overtime for burnout risk.
+2. **Retention Bonuses**: Offer stock options or income growth plans to retain low-income employees.
+3. **Remote Work Flexibility**: Reduce commute-related stress for distant employees.
+4. **Career Development Plans**: Engage younger or job-hopping employees with mentorship and training.
+5. **Pulse Surveys**: Regularly assess job and environment satisfaction to intervene early.
+
+---
+
+## 📌 Next Steps:
+- Build a real-time dashboard for HR teams (Streamlit or Power BI)
+- Track changes in attrition risk over time
+- Deploy model to predict risk on new employees
+
+---
+
+*Author: Uday Ganesh Boddu*  
+*Project: AttriSense – Employee Attrition Prediction*
